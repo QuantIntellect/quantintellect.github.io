@@ -64,33 +64,33 @@ const MoonIcon = () => (
 // Projects data
 const projects = [
   {
+    icon: "📈",
+    title: "HFTPoly",
+    description: "High-frequency trading system for Polymarket prediction markets built in Rust. Sub-millisecond latency order execution, market making algorithms, and real-time data processing.",
+    tech: ["Rust", "HFT", "Market Making", "WebSockets"],
+    link: null,
+    github: "https://github.com/QuantIntellect"
+  },
+  {
     icon: "🤖",
-    title: "ZharfAI",
-    description: "Iranian AI company providing cutting-edge infrastructure solutions for businesses. Building the future of enterprise AI in the Middle East.",
-    tech: ["AI/ML", "Cloud Infrastructure", "Enterprise"],
-    link: "https://zharfai.com",
-    github: null
+    title: "PolyBot",
+    description: "Automated trading bot for Polymarket with strategy implementation and risk management. Real-time market data integration and order execution.",
+    tech: ["Python", "Polymarket", "Trading", "Risk Management"],
+    link: null,
+    github: "https://github.com/QuantIntellect"
   },
   {
-    icon: "🏗️",
-    title: "Besazesh.ai",
-    description: "Revolutionary platform enabling anyone to build professional websites in clicks using AI-powered prompts. Democratizing web development.",
-    tech: ["AI", "Web Builder", "SaaS"],
-    link: "https://besazesh.ai",
-    github: null
-  },
-  {
-    icon: "🏛️",
-    title: "AI Engine Ltd",
-    description: "London-based company specializing in AI solutions for UK businesses, VCs, and banks. Providing intelligent backoffice automation.",
-    tech: ["FinTech", "AI", "Enterprise"],
-    link: "https://aiengineltd.com",
-    github: null
+    icon: "📊",
+    title: "Trade-Bot",
+    description: "Python-based algorithmic trading bot with backtesting capabilities. Multiple trading strategies and portfolio management features.",
+    tech: ["Python", "Backtesting", "Algorithmic Trading"],
+    link: null,
+    github: "https://github.com/QuantIntellect"
   },
   {
     icon: "🚗",
-    title: "Carkhoone",
-    description: "Founded and scaled Iran's largest online marketplace for luxury car parts. Successfully exited after establishing market dominance.",
+    title: "CarKhoone",
+    description: "Founded and led e-commerce platform for automotive parts with European/Chinese imports. Developed pricing strategies and marketing campaigns driving significant growth.",
     tech: ["E-commerce", "Marketplace", "Automotive"],
     link: "https://carkhoone.com",
     github: null
@@ -260,11 +260,15 @@ function App() {
             variants={staggerContainer}
           >
             <motion.div className="hero-label" variants={fadeInUp}>
-              Systems Architect & Founder
+              Full-Stack Engineer & Quantitative Developer
             </motion.div>
             <motion.h1 className="hero-title" variants={fadeInUp}>
               Hi, I'm <span className="text-gradient">Sina Mirzaei Nokhostin</span>
             </motion.h1>
+            <motion.p className="hero-description" variants={fadeInUp} style={{ marginTop: '1.5rem', color: 'var(--text-muted)', maxWidth: '600px', lineHeight: '1.6' }}>
+              Building high-frequency trading systems, blockchain protocols, and AI-powered applications.
+              Expertise in Rust, Python, TypeScript, and Solidity.
+            </motion.p>
           </motion.div>
         </div>
       </section>
@@ -409,7 +413,7 @@ function App() {
           >
             <motion.div className="cv-sidebar" variants={fadeInUp}>
               <h2 className="cv-name">Sina Mirzaei Nokhostin</h2>
-              <div className="cv-title">Founder & Systems Architect</div>
+              <div className="cv-title">Full-Stack Engineer & Quantitative Developer</div>
               <div className="cv-contact">
                 <a href="https://linkedin.com/in/sinamirzaei" target="_blank" rel="noopener noreferrer" className="cv-contact-item">
                   <LinkedInIcon /> linkedin.com/in/sinamirzaei
@@ -418,7 +422,7 @@ function App() {
                   <GithubIcon /> github.com/QuantIntellect
                 </a>
                 <div className="cv-contact-item">
-                  <LocationIcon /> Tehran & London
+                  <LocationIcon /> Dubai, UAE
                 </div>
               </div>
             </motion.div>
@@ -430,42 +434,42 @@ function App() {
                 <div className="cv-timeline">
                   <div className="cv-item">
                     <div className="cv-item-header">
-                      <span className="cv-item-title">Founder & CEO</span>
-                      <span className="cv-item-date">Present</span>
+                      <span className="cv-item-title">Deputy Chief Executive Officer</span>
+                      <span className="cv-item-date">Jan 2024 - Present</span>
                     </div>
-                    <div className="cv-item-subtitle">ZharfAI - Tehran, Iran</div>
+                    <div className="cv-item-subtitle">OlbrichCo - Tehran, Iran</div>
                     <p className="cv-item-description">
-                      Leading an AI infrastructure company that provides cutting-edge solutions for businesses across the Middle East.
+                      Lead enterprise technology initiatives and digital transformation strategies. Oversee software development for warehouse management systems (TypeScript).
+                    </p>
+                  </div>
+                  <div className="cv-item">
+                    <div className="cv-item-header">
+                      <span className="cv-item-title">Chief Executive Officer</span>
+                      <span className="cv-item-date">Apr 2023 - Present</span>
+                    </div>
+                    <div className="cv-item-subtitle">Eskan Faraz Delta - Tehran, Iran</div>
+                    <p className="cv-item-description">
+                      Executive leadership of company operations, marketing, and business strategy. Negotiated international contracts including supply agreements with Wittur GmbH.
+                    </p>
+                  </div>
+                  <div className="cv-item">
+                    <div className="cv-item-header">
+                      <span className="cv-item-title">International Business Coordinator</span>
+                      <span className="cv-item-date">Apr 2022 - Present</span>
+                    </div>
+                    <div className="cv-item-subtitle">Kermani General Trading LLC - Dubai, UAE</div>
+                    <p className="cv-item-description">
+                      Coordinate international trade operations and business development. Manage cross-border transactions and partnership negotiations.
                     </p>
                   </div>
                   <div className="cv-item">
                     <div className="cv-item-header">
                       <span className="cv-item-title">Founder</span>
-                      <span className="cv-item-date">Present</span>
+                      <span className="cv-item-date">Nov 2020 - Nov 2024</span>
                     </div>
-                    <div className="cv-item-subtitle">Besazesh.ai</div>
+                    <div className="cv-item-subtitle">CarKhoone - Tehran, Iran</div>
                     <p className="cv-item-description">
-                      Building an AI-powered website creation platform that enables anyone to create professional websites with simple prompts.
-                    </p>
-                  </div>
-                  <div className="cv-item">
-                    <div className="cv-item-header">
-                      <span className="cv-item-title">Founder</span>
-                      <span className="cv-item-date">Present</span>
-                    </div>
-                    <div className="cv-item-subtitle">AI Engine Ltd - London, UK</div>
-                    <p className="cv-item-description">
-                      London-based company specializing in AI solutions for UK businesses, VCs, and banks. Providing intelligent backoffice automation.
-                    </p>
-                  </div>
-                  <div className="cv-item">
-                    <div className="cv-item-header">
-                      <span className="cv-item-title">Founder</span>
-                      <span className="cv-item-date">Exited</span>
-                    </div>
-                    <div className="cv-item-subtitle">Carkhoone.com</div>
-                    <p className="cv-item-description">
-                      Founded and scaled Iran's largest online marketplace for luxury car parts. Successfully established market dominance before exit.
+                      Founded and led e-commerce platform for automotive parts with European/Chinese imports. Developed pricing strategies and marketing campaigns driving significant growth.
                     </p>
                   </div>
                 </div>
@@ -477,11 +481,22 @@ function App() {
                 <div className="cv-timeline">
                   <div className="cv-item">
                     <div className="cv-item-header">
-                      <span className="cv-item-title">BSc Electrical Engineering</span>
+                      <span className="cv-item-title">M.S. Economics</span>
+                      <span className="cv-item-date">2022 - 2024</span>
+                    </div>
+                    <div className="cv-item-subtitle">Shahid Beheshti University</div>
+                    <p className="cv-item-description">
+                      Focus: Econometrics, Quantitative Methods, Economic Modeling
+                    </p>
+                  </div>
+                  <div className="cv-item">
+                    <div className="cv-item-header">
+                      <span className="cv-item-title">B.S. Electrical & Electronics Engineering</span>
+                      <span className="cv-item-date">2016 - 2021</span>
                     </div>
                     <div className="cv-item-subtitle">University of Tehran</div>
                     <p className="cv-item-description">
-                      One of the most prestigious engineering programs in Iran, providing a strong foundation in systems thinking and technical problem-solving.
+                      Digital Systems Department. Thesis: Formal verification methods for arithmetic circuit optimization.
                     </p>
                   </div>
                 </div>
@@ -489,25 +504,35 @@ function App() {
 
               {/* Achievements */}
               <motion.div variants={fadeInUp}>
-                <h3 className="cv-section-title">Achievements</h3>
+                <h3 className="cv-section-title">Certifications & Achievements</h3>
                 <div className="cv-timeline">
                   <div className="cv-item">
                     <div className="cv-item-header">
-                      <span className="cv-item-title">🥈 Silver Medal - Chemistry Olympiad</span>
+                      <span className="cv-item-title">Machine Learning Specialization</span>
                     </div>
-                    <div className="cv-item-subtitle">Iran National Chemistry Olympiad</div>
+                    <div className="cv-item-subtitle">Comprehensive ML Program</div>
+                  </div>
+                  <div className="cv-item">
+                    <div className="cv-item-header">
+                      <span className="cv-item-title">Guided Tour of ML in Finance</span>
+                      <span className="cv-item-date">2023</span>
+                    </div>
+                    <div className="cv-item-subtitle">New York University</div>
+                  </div>
+                  <div className="cv-item">
+                    <div className="cv-item-header">
+                      <span className="cv-item-title">Two-time National Chemistry Olympiad Medalist</span>
+                    </div>
+                    <div className="cv-item-subtitle">Iran</div>
                     <p className="cv-item-description">
-                      Awarded silver medal for exceptional performance in the national chemistry competition.
+                      Exceptional analytical and problem-solving skills demonstrated at the national level.
                     </p>
                   </div>
                   <div className="cv-item">
                     <div className="cv-item-header">
-                      <span className="cv-item-title">🥉 Bronze Medal - Chemistry Olympiad</span>
+                      <span className="cv-item-title">780+ GitHub Contributions</span>
                     </div>
-                    <div className="cv-item-subtitle">Iran National Chemistry Olympiad</div>
-                    <p className="cv-item-description">
-                      Awarded bronze medal demonstrating strong analytical and problem-solving skills in chemistry.
-                    </p>
+                    <div className="cv-item-subtitle">36 repositories in the past year</div>
                   </div>
                 </div>
               </motion.div>
@@ -517,9 +542,11 @@ function App() {
                 <h3 className="cv-section-title">Skills & Technologies</h3>
                 <div className="cv-skills">
                   {[
-                    'AI/ML', 'Python', 'Cloud Architecture', 'AWS', 'React',
-                    'Node.js', 'TypeScript', 'System Design', 'Leadership',
-                    'Product Strategy', 'Business Development', 'Team Building'
+                    'Rust', 'Python', 'TypeScript', 'Solidity', 'C++', 'Swift', 'SQL',
+                    'HFT Systems', 'Market Making', 'Algorithmic Trading', 'Backtesting',
+                    'Smart Contracts', 'DeFi', 'Web3',
+                    'Reinforcement Learning', 'Deep Learning', 'NLP', 'Computer Vision',
+                    'React', 'Next.js', 'Node.js', 'PostgreSQL', 'MongoDB', 'Redis', 'Docker'
                   ].map((skill, i) => (
                     <span key={i} className="cv-skill">{skill}</span>
                   ))}
